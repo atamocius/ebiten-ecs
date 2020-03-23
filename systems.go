@@ -24,7 +24,7 @@ func initializerSystem() {
 }
 
 // Since ebiten runs in a constant 60 ticks per second, the delta can be
-// caluclated as a constant (in milliseconds).
+// calculated as a constant (in milliseconds).
 const delta = 1 / 60.0 * 1000
 
 func movableSystem() {
