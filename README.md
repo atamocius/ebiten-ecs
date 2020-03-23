@@ -62,7 +62,7 @@ Since entities and components are purely value types, there is no need to mainta
 Systems are implemented as functions.
 
 ```go
-func movableSystem() {
+func movableSystem(delta float32) {
 	count := len(world.gameObjects)
 
 	for i := 0; i < count; i++ {
