@@ -4,6 +4,8 @@ A simple ECS (Entity Component System) pattern implemented in [_Go_](https://go.
 
 > The code sample was inspired by [_ecsy_](https://ecsy.io/docs)'s documentation example.
 
+![screenshot-ecs](https://user-images.githubusercontent.com/6222358/77348054-b0c85c00-6d30-11ea-800b-f2e34ebf41bd.png)
+
 ## Implementation
 
 The idea is to implement ECS as a _pattern_ rather than a set of tools or a library/package.
