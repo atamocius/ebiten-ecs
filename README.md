@@ -14,8 +14,8 @@ Components are implemented as structs.
 
 ```go
 type velocity struct {
-	vX float32
-	vY float32
+	VX float32
+	VY float32
 }
 
 type position struct {

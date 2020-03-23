@@ -6,8 +6,8 @@ const speedMultiplier = 0.1
 
 func getRandomVelocity() velocity {
 	return velocity{
-		vX: speedMultiplier * (2*rand.Float32() - 1),
-		vY: speedMultiplier * (2*rand.Float32() - 1),
+		VX: speedMultiplier * (2*rand.Float32() - 1),
+		VY: speedMultiplier * (2*rand.Float32() - 1),
 	}
 }
 

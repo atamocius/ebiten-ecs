@@ -1,8 +1,8 @@
 package main
 
 type velocity struct {
-	vX float32
-	vY float32
+	VX float32
+	VY float32
 }
 
 type position struct {

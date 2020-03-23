@@ -30,8 +30,8 @@ func movableSystem(delta float32) {
 		vel := e.velocity
 		pos := e.position
 
-		pos.X += vel.vX * delta
-		pos.Y += vel.vY * delta
+		pos.X += vel.VX * delta
+		pos.Y += vel.VY * delta
 
 		if pos.X > canvasWidth+shapeHalfSize {
 			pos.X = -shapeHalfSize
