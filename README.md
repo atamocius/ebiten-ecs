@@ -49,6 +49,8 @@ type gameObject struct {
 
 Archetypes are created at _design-time_. As a limitation, we cannot create or manipulate archetypes at runtime. This is not an issue for small to medium sized projects, but for anything larger or with complex data interactions, you might have to resort to other ECS implementations or libraries/packages.
 
+> If _name clashing_ is a concern, then just name the component fields instead of embedding them.
+
 In order to keep track of the instances, we use slices.
 
 ```go
