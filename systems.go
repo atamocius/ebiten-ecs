@@ -9,25 +9,19 @@ var world struct {
 }
 
 func initializerSystem() {
-	world.gameObjects = make([]gameObject, 0, numElements)
+	world.gameObjects = make([]gameObject, numElements)
 
 	for i := 0; i < numElements; i++ {
-		e := gameObject{
+		world.gameObjects[i] = gameObject{
 			velocity:   getRandomVelocity(),
 			shape:      getRandomShape(),
 			position:   getRandomPosition(),
 			renderable: renderable{true},
 		}
-
-		world.gameObjects = append(world.gameObjects, e)
 	}
 }
 
-// Since ebiten runs in a constant 60 ticks per second, the delta can be
-// calculated as a constant (in milliseconds).
-const delta = 1 / 60.0 * 1000
-
-func movableSystem() {
+func movableSystem(delta float32) {
 	count := len(world.gameObjects)
 
 	for i := 0; i < count; i++ {

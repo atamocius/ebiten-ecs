@@ -17,8 +17,12 @@ func main() {
 	}
 }
 
+// Since ebiten runs in a constant 60 ticks per second, the delta can be
+// calculated as a constant (in milliseconds).
+const delta = 1 / 60.0 * 1000
+
 func update(screen *ebiten.Image) error {
-	movableSystem()
+	movableSystem(delta)
 
 	if ebiten.IsDrawingSkipped() {
 		return nil
