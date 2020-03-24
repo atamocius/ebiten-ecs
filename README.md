@@ -15,14 +15,14 @@ The idea is to implement ECS as a _pattern_ rather than a set of tools or a libr
 Components are implemented as structs.
 
 ```go
+package main
+
 type velocity struct {
-	VX float32
-	VY float32
+	VX, VY float32
 }
 
 type position struct {
-	X float32
-	Y float32
+	X, Y float32
 }
 
 type shape struct {
