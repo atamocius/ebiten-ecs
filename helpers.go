@@ -20,12 +20,7 @@ func getRandomPosition() position {
 
 func getRandomShape() shape {
 	if rand.Float32() >= 0.5 {
-		return shape{
-			Primitive: circle,
-		}
+		return shape{circle}
 	}
-
-	return shape{
-		Primitive: box,
-	}
+	return shape{box}
 }

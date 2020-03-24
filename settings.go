@@ -1,4 +1,6 @@
 package main
 
-const canvasWidth = 500
-const canvasHeight = 500
+const (
+	canvasWidth  = 500
+	canvasHeight = 500
+)

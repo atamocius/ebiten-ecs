@@ -30,8 +30,14 @@ func update(screen *ebiten.Image) error {
 
 	rendererSystem(screen)
 
-	ebitenutil.DebugPrint(screen, fmt.Sprintf("FPS: %0.2f", ebiten.CurrentFPS()))
-	ebitenutil.DebugPrint(screen, fmt.Sprintf("\nTPS: %0.2f", ebiten.CurrentTPS()))
+	ebitenutil.DebugPrint(
+		screen,
+		fmt.Sprintf("FPS: %0.2f", ebiten.CurrentFPS()),
+	)
+	ebitenutil.DebugPrint(
+		screen,
+		fmt.Sprintf("\nTPS: %0.2f", ebiten.CurrentTPS()),
+	)
 
 	return nil
 }
